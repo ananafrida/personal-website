@@ -20,6 +20,7 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.18",
+    "autoprefixer": "^10.4.16",
     "css-loader": "^6.8.1",
     "gsap": "^3.12.2",
     "postcss-loader": "^7.3.3",
