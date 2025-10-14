@@ -81,28 +81,28 @@ function Home() {
           })
         .fromTo(i(".a-two"), {opacity: 0}, {
             opacity: 1, duration: 1, ease: "none", transformOrigin: 'center center', repeat: -1, yoyo: true
-          }) 
+          })
         .fromTo(i(".a-three"), {opacity: 0}, {
             opacity: 1, duration: 1, ease: "none", transformOrigin: 'center center', repeat: -1, yoyo: true
-          }) 
+          })
         .fromTo(i(".a-four"), {opacity: 0}, {
             opacity: 1, duration: 1, ease: "none", transformOrigin: 'center center', repeat: -1, yoyo: true
-          }) 
+          })
         .fromTo(i(".a-five"), {opacity: 0}, {
             opacity: 1, duration: 1, ease: "none", transformOrigin: 'center center', repeat: -1, yoyo: true
-          }) 
+          })
         .fromTo(i(".a-six"), {opacity: 0}, {
             opacity: 1, duration: 1, ease: "none", transformOrigin: 'center center', repeat: -1, yoyo: true
-          }) 
+          })
         .fromTo(i(".a-seven"), {opacity: 0}, {
             opacity: 1, duration: 1, ease: "none", transformOrigin: 'center center', repeat: -1, yoyo: true
-          }) 
+          })
         .fromTo(i(".a-eight"), {opacity: 0}, {
             opacity: 1, duration: 1, ease: "none", transformOrigin: 'center center', repeat: -1, yoyo: true
-          }) 
+          })
         .fromTo(i(".a-nine"), {opacity: 0}, {
             opacity: 1, duration: 1, ease: "none", transformOrigin: 'center center', repeat: -1, yoyo: true
-          })     
+          })
     });
 
     const [background, setBackground] = useState('');
@@ -113,9 +113,9 @@ function Home() {
 
     const nav = () => {
         return navigate('/work'), window.location.reload();
-        
+
       }
-    
+
     const Styles = {
        backgroundImage: `url(${image})`
     }
@@ -141,14 +141,12 @@ function Home() {
                 <div className="content-tertiary">
                     <p><span>✌🏻</span> Hi there! I'm Anan Afrida</p>
                 </div>
-                <div className="content-primary">
-                    <h1>a <span>Research Assistant</span>. I help <span>build</span> and <span>process</span> RNN models</h1>
+                    <div className="content-primary"> <h1>a <span>Research Assistant</span>. I <span>build</span> and <span>evaluate</span> cognitive AI models</h1>
+                    </div>
+                    <div className="content-secondary"> <p>I do research at MIT CSAIL and MIT Media Lab. I am Computer Science and Mathematics major at Wesleyan University. I interned as a software engineer at Bank of America. I am TechWise Scholar at Google. Being an active participant of Math Olympiad, Informatics Olympiad, Putnam Math Competition, and International Collegiate Programming Contest (ICPC), My current research area is human-AI interaction and have published my work at multiple conferences.</p>
+                    </div>
                 </div>
-                <div className="content-secondary">
-                    <p>I am a Computer Science and Mathematics major and Applied Data Analysis minor at Wesleyan University. I interned as a software engineer while I was in high school. Being an active participant of Math Olympiad, Informatics Olympiad, Putnam Math Competition, and International Collegiate Programming Contest (ICPC), I love algorithmic and mathematical problem solving.</p>
-                </div>
-                </div>
-                
+
                 <div className="hero-icon">
                 <img src={girl} alt="Hero Icon" style={{ width: '100%', maxWidth: '500px' }} />
                 </div>
