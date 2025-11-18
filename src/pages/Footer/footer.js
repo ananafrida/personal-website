@@ -39,7 +39,7 @@ function Footer() {
             </a>
             </div>
             <div className="footer">
-            <p>Built from scratch with <span>💚</span> &copy; Copyright 2023, Anan.xyz. All Rights Reserved.</p>
+            <p>Built from scratch with <span>💚</span> &copy; Copyright 2025, Anan.xyz. All Rights Reserved.</p>
         </div>
         </footer>
     )
