@@ -5,7 +5,7 @@ import { CustomEase } from "gsap/CustomEase";
 import { Outlet, Link, NavLink } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
-import stopstalk from '../../assets/images/stopstalk-rotated.png';
+import codeforces from '../../assets/images/codeforces.png';
 import './header.style.js';
 import './header.scss';
 
@@ -80,7 +80,7 @@ function Header() {
 
       const nav = () => {
         return navigate('/'), window.location.reload();
-        
+
       }
 
     return (
@@ -106,7 +106,7 @@ function Header() {
 </svg>
 <p>Github</p>
 </div>
-                    </a> 
+                    </a>
 
                 <a className="linkedin" href="https://www.linkedin.com/in/anan-afrida/" target="_blank">
                 <div className="linkedin_box">
@@ -115,7 +115,7 @@ function Header() {
 </svg>
 <p>LinkedIn</p>
                     </div>
-                    </a>  
+                    </a>
 
                 <a className="twitter" href="https://twitter.com/ananafrida" target="_blank">
                 <div className="twitter_box">
@@ -126,14 +126,14 @@ function Header() {
                     </div>
                     </a>
 
-                <a className="schedule" href="https://www.stopstalk.com/user/profile/anancodec" target="_blank">
+                <a className="schedule" href="https://codeforces.com/profile/anancodec" target="_blank">
                 <div className="schedule_box">
-                <img src={stopstalk} alt="StopStalk" style={{ width: '25%', maxWidth: '500px' }}/>
-<p>StopStalk</p>
+                <img src={codeforces} alt="Codeforces" style={{ marginBottom: '15%', width: '15%', maxWidth: '500px', transform: 'rotate(-90deg)' }}/>
+<p>Codeforces</p>
                 </div>
                 </a>
 
-                    </div>    
+                    </div>
                 <div className="small_menu">
                     <ul>
                         <li className="menu-one"><NavLink className="nav-link" onClick={check} to="/">Home</NavLink></li>
@@ -142,7 +142,7 @@ function Header() {
                         <li className="menu-four"><a className="nav-link" href="https://drive.google.com/file/d/1IF_SJRFVb39qAMpxFcjur3abz9Rv0nPj/" target="_blank">Resume</a></li>
                         <li className="menu-five"><a className="nav-link" href="mailto:anan.afrida.yes@gmail.com" target="_blank">Contact</a></li>
                     </ul>
-                    </div>    
+                    </div>
             </div>
             </div>
 
