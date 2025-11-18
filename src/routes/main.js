@@ -2,8 +2,8 @@ import React from 'react'
 const Home = React.lazy(
     () => import('./../pages/Home/home'),
 )
-const Blog = React.lazy(
-    () => import('./../pages/Blog/blog'),
+const Publication = React.lazy(
+    () => import('../pages/Publication/publication'),
 )
 const Work = React.lazy(
     () => import('./../pages/Work/work'),
@@ -18,7 +18,7 @@ const Preloader = React.lazy(
 
 var mainRoutes = [
     { path: '/', name: 'Homepage', component: <Home /> },
-    { path: '/blog', name: 'Blog', component: <Blog /> },
+    { path: '/publication', name: 'Publication', component: <Publication /> },
     { path: '/work', name: 'Work', component: <Work /> },
     { path: '/contact', name: 'Contact', component: <Contact /> },
     { path: '/preloader', name: 'Preloader', component: <Preloader /> },

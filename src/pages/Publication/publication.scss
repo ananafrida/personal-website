@@ -1,0 +1,185 @@
+.publication-page {
+    width: 100%;
+    min-height: 100vh;
+    background: #050810; // match gradient base tone
+    padding: 6rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.publication-container {
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 759px) {
+        width: 90%;
+    }
+}
+
+.publication-title {
+    background: #12141d;
+    border-radius: 12px;
+    padding: 0.8rem 2rem;
+    margin-bottom: 4rem;
+    box-shadow: 0px 0px 4px 1px rgba(20,233,86,1) inset;
+    transform: rotate(0.01turn);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        text-transform: uppercase;
+        font-family: "Cyborg";
+        font-weight: 900;
+        color: #14E956;
+        text-shadow:
+            3px 3px 0 #000,
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+
+        @supports (-webkit-text-stroke: .1px #000) {
+            -webkit-text-stroke: .1px #000;
+            -webkit-text-fill-color: #14E956;
+        }
+
+        font-size: 2.6rem;
+
+        @media (min-width: 1025px) and (max-width: 1300px) {
+            font-size: 2.3rem;
+        }
+        @media (min-width: 760px) and (max-width: 1024px) {
+            font-size: 2rem;
+        }
+        @media (max-width: 759px) {
+            font-size: 1.7rem;
+        }
+    }
+}
+
+/* --- Publication Cards --- */
+
+.publication-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.pub-card {
+    background: #12141d;
+    border-radius: 15px;
+    padding: 1.8rem 2rem;
+    border: 1px solid rgba(20,233,86,0.3);
+    box-shadow: 0px 0px 10px 2px rgba(20,233,86,0.25);
+    transition: all 0.3s ease;
+    transform: rotate(0.01turn);
+
+    &:hover {
+        transform: translateY(-6px) scale(1.02) rotate(0.01turn);
+        box-shadow: 0px 0px 12px 3px rgba(20,233,86,0.5);
+    }
+}
+
+.pub-title {
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: #14E956;
+    margin: 0 0 0.8rem 0;
+    text-shadow:
+        2px 2px 0 #000,
+        -1px -1px 0 #000;
+
+    @media (max-width: 759px) {
+        font-size: 1.3rem;
+    }
+}
+
+.pub-authors {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #d7d7d7;
+    opacity: .85;
+
+    @media (max-width: 759px) {
+        font-size: .95rem;
+    }
+}
+
+.pub-venue {
+    margin: 0.3rem 0 0 0;
+    font-size: .95rem;
+    font-weight: 500;
+    color: #a7a7a7;
+    opacity: .75;
+
+    @media (max-width: 759px) {
+        font-size: .85rem;
+    }
+}
+
+/* --- Footer --- */
+
+.publication-footer {
+    margin-top: 4rem;
+    font-size: .75rem;
+    text-align: center;
+    color: #999;
+    opacity: .6;
+}
+
+/* --- Optional Fade Animations (match home.scss animations) --- */
+
+.publication-page.hidden {
+    opacity: 0;
+}
+
+.publication-page.show {
+    opacity: 1;
+
+    .publication-title {
+        animation: flipInY 1.5s ease forwards;
+    }
+
+    .pub-card {
+        animation: fadeInLeft 1.5s ease forwards;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translate3d(-100%, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes flipInY {
+    from {
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    }
+    60% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+    80% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+    to {
+        transform: perspective(400px);
+    }
+}

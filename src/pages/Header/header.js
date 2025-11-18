@@ -138,7 +138,7 @@ function Header() {
                     <ul>
                         <li className="menu-one"><NavLink className="nav-link" onClick={check} to="/">Home</NavLink></li>
                         <li className="menu-two"><NavLink className="nav-link" onClick={check} to="/work">Work</NavLink></li>
-                        <li className="menu-three"><a className="nav-link" href="" target="_blank">Writing</a></li>
+                        <li className="menu-three"><NavLink className="nav-link" onClick={check} to="/publication">Publication</NavLink></li>
                         <li className="menu-four"><a className="nav-link" href="https://drive.google.com/file/d/1IF_SJRFVb39qAMpxFcjur3abz9Rv0nPj/" target="_blank">Resume</a></li>
                         <li className="menu-five"><a className="nav-link" href="mailto:anan.afrida.yes@gmail.com" target="_blank">Contact</a></li>
                     </ul>
