@@ -6,9 +6,16 @@ import project5 from './../assets/images/project5.png';
 
 export const ProjectData = [
     {
+        title: "MIT App Inventor Chatbot",
+        description: "A Retrieval Augmented Generation (RAG) based chatbot that leverages AWS S3 for document storage, titan embeddings, vectorization, and OpenAI's GPT-3.5-turbo for generating context-aware responses. The chatbot retrieves relevant information from uploaded documents to provide accurate answers to user queries.",
+        img: project1,
+        stack: "Python",
+        link: "https://github.com/ananafrida/rag-chatbot"
+    },
+    {
         title: "Wesleyan Interactive Campus Map",
         description: "This is Wesleyan University's campus map built using Google Map API, mapIDs, and custom Google Map markers. I built interactive campus map for university using Google Maps API to help people navigate and update locations.",
-        img: project1,
+        img: project2,
         stack: "JavaScript",
         link: "https://animated-semolina-5e423f.netlify.app"
     },
@@ -19,29 +26,22 @@ export const ProjectData = [
                 We developed a React-Native frontend that seamlessly integrates with our PHP/MySQL backend created, via a REST API. The app allows users to manage a list of songs, including creating, reading, updating, and deleting songs. This is a collaborative class project with my teammate <a href="https://github.com/n-aggarwal" target="_blank">Nishant Aggarwal</a>.
             `}} />
         ),
-        img: project2,
+        img: project3,
         stack: "React Native",
         link: "https://github.com/ananafrida/comp-333-4-frontend"
     },
     {
         title: "Task List App",
         description: "A task list app that allow users to add, search, and delete tasks. It also allows them to rank tasks based on priority.",
-        img: project3,
+        img: project4,
         stack: "Angular",
         link: "https://github.com/ananafrida/tasklist"
     },
     {
         title: "Fries Center for Global Studies Data Project",
         description: "This is Wesleyan University's data summer data project to observe the trends of study abroad students' language type based on majors and divisions over years.",
-        img: project4,
+        img: project5,
         stack: "R and SAS",
         link: "https://github.com/ananafrida/wes-fries-data-project"
-    },
-    {
-        title: "My Old Portfolio Blog",
-        description: "I built this app to as a part of self-paced web development learning in high school.",
-        img: project5,
-        stack: "CSS",
-        link: "https://github.com/ananafrida/portfolioblog"
     }
 ];

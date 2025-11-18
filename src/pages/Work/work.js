@@ -20,9 +20,23 @@ function Work() {
                 </span>
             </div>
             <div className="projects">
+                <div className="single reverse">
+                <div className="single-img">
+                    <img src={project1} alt="" />
+                </div>
+                <div className="single-detail">
+                    <h4>MIT App Inventor Chatbot</h4>
+                    <p>A Retrieval Augmented Generation (RAG) based chatbot that leverages AWS S3 for document storage, titan embeddings, vectorization, and OpenAI's GPT-3.5-turbo for generating context-aware responses. The chatbot retrieves relevant information from uploaded documents to provide accurate answers to user queries.</p>
+                    <div class="button-wrap">
+                    <a href="https://app-inventor-support-bot.streamlit.app/" target="_blank" rel="noopener noreferrer">
+                     <button className="button">Visit &rarr;</button>
+                     </a>
+                     </div>
+                </div>
+                </div>
                 <div className="single">
                 <div className="single-img">
-                    <img src= {project1} alt="" />
+                    <img src= {project2} alt="" />
                 </div>
                 <div className="single-detail">
                     <h4>Wesleyan Interactive Campus Map</h4>
@@ -36,7 +50,7 @@ function Work() {
                 </div>
                 <div className="single reverse">
                 <div className="single-img">
-                    <img src={project2} alt="" />
+                    <img src={project3} alt="" />
                 </div>
                 <div className="single-detail">
                    <h4>Music Rater Mobile App</h4>
@@ -50,7 +64,7 @@ function Work() {
                 </div>
                 <div className="single">
                 <div className="single-img">
-                    <img src={project3} alt="" />
+                    <img src={project4} alt="" />
                 </div>
                 <div className="single-detail">
                     <h4>Task List App</h4>
@@ -64,27 +78,13 @@ function Work() {
                 </div>
                 <div className="single reverse">
                 <div className="single-img">
-                    <img src={project4} alt="" />
+                    <img src={project5} alt="" />
                 </div>
                 <div className="single-detail">
                     <h4>Fries Center for Global Studies Data Project</h4>
                     <p>This is Wesleyan University's data summer data project to observe the trends of study abroad students' language type based on majors and divisions over years.</p>
                     <div class="button-wrap">
                     <a href="https://github.com/ananafrida/wes-fries-data-project" target="_blank" rel="noopener noreferrer">
-                     <button className="button">Visit &rarr;</button>
-                     </a>
-                     </div>
-                </div>
-                </div>
-                <div className="single">
-                <div className="single-img">
-                    <img src={project5} alt="" />
-                </div>
-                <div className="single-detail">
-                    <h4>My Old Portfolio Blog</h4>
-                    <p>I built this app to as a part of self-paced web development learning in high school.</p>
-                    <div class="button-wrap">
-                    <a href="https://github.com/ananafrida/portfolioblog" target="_blank" rel="noopener noreferrer">
                      <button className="button">Visit &rarr;</button>
                      </a>
                      </div>
